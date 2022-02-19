@@ -1,0 +1,41 @@
+{
+	"version":"Alpha 1.0.1",
+	"model":"17kanade_normal.moc3",
+	"textures":[
+		"17kanade_normal.2048/texture_00.png"
+	],
+    "physics":"17kanade_normal.physics3.json",
+    "layout":{
+		"center_x": 0,
+        "center_y": 0,
+        "width": 1.8
+	},
+	"hit_areas_custom":{
+		"head_x":[-0.35, 0.6],
+		"head_y":[0.19, -0.2],
+		"body_x":[-0.3, -0.25],
+		"body_y":[0.3, -0.9]
+	},
+    "expressions":[
+		{"name":"f01","file":"motions/face_smile_01.motion3.json"},
+		{"name":"f02","file":"motions/face_surprise_01.motion3.json"},
+		{"name":"f03","file":"motions/face_shy_01.motion3.json"},
+		{"name":"f04","file":"motions/face_serious_01.motion3.json"}
+	],
+	"motions":{
+	    "idle":[
+			{"file":"motions/w-normal-relief01.motion3.json","fade_in":2000, "fade_out":2000},
+			{"file":"motions/w-happy-sad01.motion3.json","fade_in":2000, "fade_out":2000},
+			{"file":"motions/w-normal-pose02.motion3.json","fade_in":2000, "fade_out":2000}
+		],
+		"flick_head":[
+		    {"file":"motions/w-happy-shakehead03.motion3.json"},
+			{"file":"motions/w-cute-glad05.motion3.json"}
+		],
+		"tap_body":[
+            {"file":"motions/w-happy-guruguru01.motion3.json"},
+			{"file":"motions/w-adult-trouble01.motion3.json"},
+            {"file":"motions/w-adult-delicious03.motion3.json"}
+		]
+	}
+}
